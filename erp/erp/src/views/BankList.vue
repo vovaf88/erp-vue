@@ -1,7 +1,9 @@
 <template>
     <div>
         <h3>Banks</h3>
-        
+        <div>
+            <router-link to="/banks/create">Создать банк</router-link>/
+        </div>
         <div>
             <p v-for="bank in listBank" :key="bank.id">
                 <h4><a href="" @click="goTo(bank.id)">{{ bank.name }}</a></h4>  
@@ -9,7 +11,7 @@
             </p>
         </div>
 
-    </div>
+        </div>
 </template>
 
 <script>

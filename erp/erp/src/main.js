@@ -16,6 +16,10 @@ import MyBankAccountList from './views/MyBankAccountList.vue';
 import SingleMyBankAccount from './views/SingleMyBankAccount.vue';
 import PartnerBankAccountList from './views/PartnerBankAccountList.vue';
 import SinglePartnerBankAccount from './views/SinglePartnerBankAccount.vue';
+import BankCreate from './components/BankCreate.vue';
+import ProductCreate from './components/ProductCreate.vue';
+import Doc1List from './views/Doc1List.vue';  
+import SingleDoc from './views/SingleDoc.vue';
 //import router from './router'
 
 
@@ -26,6 +30,11 @@ const router = createRouter({
     {
       path: "/products",
       component: ProductList,
+    },
+    {
+      path: "/products/create",
+      name: "ProductCreate",
+      component: ProductCreate,
     },
     {
       path: "/products/:id",
@@ -56,6 +65,11 @@ const router = createRouter({
       component: BankList,
     },
     {
+      path: "/banks/create",
+      name: "BankCreate",
+      component: BankCreate,
+    },
+    {
       path: "/banks/:id",
       name: "SingleBank",
       component: SingleBank,
@@ -79,6 +93,17 @@ const router = createRouter({
       path: "/partnerbankaccounts/:id",
       name: "SinglePartnerBankAccount",
       component: SinglePartnerBankAccount,
+      props: true,
+    },
+    {
+      path: "/docs",
+      name: "Doc1List",
+      component: Doc1List,
+    },
+    {
+      path: "/docs/:id",
+      name: "SingleDoc",
+      component: SingleDoc,
       props: true,
     },
   ],

@@ -1,11 +1,11 @@
 <template>
     <div>
         <h3>{{ partner.name }}</h3>
-        <p>Категория: {{ partner.inn }}</p>
-        <p>Описание: {{ partner.fiz_lico }}</p>
-        <p>Цена: {{ partner.buyer }}</p>
-        <p>Единица измерения: {{ partner.seller }}</p>
-        <p>Услуга: {{ partner.other }}</p>
+        <p>ИНН: {{ partner.inn }}</p>
+        <p>Физ. лицо: {{ partner.fiz_lico }}</p>
+        <p>Покупатель: {{ partner.buyer }}</p>
+        <p>Поставщик: {{ partner.seller }}</p>
+        <p>Прочее: {{ partner.other }}</p>
     </div>
 </template>
 

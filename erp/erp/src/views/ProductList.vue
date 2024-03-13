@@ -1,6 +1,9 @@
 <template>
     <div>
         <h3>Products</h3>
+        <div>
+            <router-link to="/products/create">Создать номенклатуру</router-link>/
+        </div>
         
         <div>
             <p v-for="product in listProduct" :key="product.id">
