@@ -27,7 +27,7 @@ export default {
     methods: {
         async loadListPartner() {
             this.listPartner= await fetch(
-                `${this.$store.getters.getServerUrl}/partners/`
+                `${this.$store.getters.getServerUrl}/partners/?seller=false&buyer=true&other=`
             ).then(response => response.json())
             
         },
