@@ -20,6 +20,8 @@ import BankCreate from './components/BankCreate.vue';
 import ProductCreate from './components/ProductCreate.vue';
 import Doc1List from './views/Doc1List.vue';  
 import SingleDoc from './views/SingleDoc.vue';
+import PurchaseDocList from './views/PurchaseDocList.vue';
+import PurchaseSingleDoc from './views/PurchaseSingleDoc.vue';
 //import router from './router'
 
 
@@ -96,14 +98,14 @@ const router = createRouter({
       props: true,
     },
     {
-      path: "/docs",
-      name: "Doc1List",
-      component: Doc1List,
+      path: "/purchase",
+      name: "PurchaseDocList",
+      component: PurchaseDocList,
     },
     {
-      path: "/docs/:id",
-      name: "SingleDoc",
-      component: SingleDoc,
+      path: "/purchase/:id",
+      name: "PurchaseSingleDoc",
+      component: PurchaseSingleDoc,
       props: true,
     },
   ],

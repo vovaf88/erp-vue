@@ -32,7 +32,7 @@ export default {
             
         },
         goTo(id){
-            this.$router.push({ name: 'SingleDoc', params: { id: id }})
+            this.$router.push({ name: 'PurchaseSingleDoc', params: { id: id }})
         }
     }
 }
