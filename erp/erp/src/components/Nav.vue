@@ -7,7 +7,7 @@
         <router-link to="/banks/">Банки</router-link>/
         <router-link to="/mybankaccounts/">Мои банковские счета</router-link>/
         <router-link to="/partnerbankaccounts/">Банковские счета контрагентов</router-link>/
-        <router-link to="/docs/">Документы No1</router-link>/
+        <router-link to="/purchase/">Документы покупки</router-link>/
 
     </div>
 </template>

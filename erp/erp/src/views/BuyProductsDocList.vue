@@ -27,7 +27,7 @@ export default {
     methods: {
         async loadListDoc() {
             this.listDoc= await fetch(
-                `${this.$store.getters.getServerUrl}/docs/`
+                `${this.$store.getters.getServerUrl}/purchase/`
             ).then(response => response.json())
             
         },
