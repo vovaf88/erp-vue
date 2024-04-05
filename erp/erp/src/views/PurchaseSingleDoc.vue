@@ -4,12 +4,15 @@
         <p>Партнер: {{ doc.partner }}</p>
         <p>Сумма: {{ doc.summ }}</p>
         <p>Операция: {{ doc.operation }}</p>
+        <p v-for="tab in doc.str_purchase" :key="tab.id">
+            <p>{{ tab.product }} / {{ tab.count }} / {{ tab.price }} / {{ tab.summa }}</p>
+        </p>
         <TabDoc :doc="doc.id" :tabs="doc.tabs" @reload="loadDoc"/>
     </div>
 </template>
 
 <script>
-import TabDoc from '../components/TabDoc.vue';
+import TabDoc from '../components/PurchaseTabDoc.vue';
 export default {
     name: "PurchaseSingleDoc",
     props: ["id"],
