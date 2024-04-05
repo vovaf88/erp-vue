@@ -22,6 +22,8 @@ import Doc1List from './views/Doc1List.vue';
 import SingleDoc from './views/SingleDoc.vue';
 import PurchaseDocList from './views/PurchaseDocList.vue';
 import PurchaseSingleDoc from './views/PurchaseSingleDoc.vue';
+import SaleDocList from './views/SaleDocList.vue';
+import SaleSingleDoc from './views/SaleSingleDoc.vue';
 //import router from './router'
 
 
@@ -106,6 +108,17 @@ const router = createRouter({
       path: "/purchase/:id",
       name: "PurchaseSingleDoc",
       component: PurchaseSingleDoc,
+      props: true,
+    },
+    {
+      path: "/sale",
+      name: "SaleDocList",
+      component: SaleDocList,
+    },
+    {
+      path: "/sale/:id",
+      name: "SaleSingleDoc",
+      component: SaleSingleDoc,
       props: true,
     },
   ],

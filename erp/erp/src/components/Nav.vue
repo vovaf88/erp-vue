@@ -8,6 +8,6 @@
         <router-link to="/mybankaccounts/">Мои банковские счета</router-link>/
         <router-link to="/partnerbankaccounts/">Банковские счета контрагентов</router-link>/
         <router-link to="/purchase/">Документы покупки</router-link>/
-
+        <router-link to="/sale/">Документы продажи</router-link>/
     </div>
 </template>
