@@ -9,5 +9,7 @@
         <router-link to="/partnerbankaccounts/">Банковские счета контрагентов</router-link>/
         <router-link to="/purchase/">Документы покупки</router-link>/
         <router-link to="/sale/">Документы продажи</router-link>/
+        <router-link to="/moneyon/">Документы поступление денег</router-link>/
+        
     </div>
 </template>

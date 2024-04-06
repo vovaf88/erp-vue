@@ -1,7 +1,6 @@
 <template>
     <div>
         <h3>Partners</h3>
-        
         <div>
             <p v-for="partner in listPartner" :key="partner.id">
                 <h4><a href="" @click="goTo(partner.id)">{{ partner.name }}</a></h4>  
@@ -27,7 +26,7 @@ export default {
     methods: {
         async loadListPartner() {
             this.listPartner= await fetch(
-                `${this.$store.getters.getServerUrl}/partners/?seller=false&buyer=true&other=`
+                `${this.$store.getters.getServerUrl}/partners/?seller=&buyer=&other=`
             ).then(response => response.json())
             
         },

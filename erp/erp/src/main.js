@@ -24,6 +24,10 @@ import PurchaseDocList from './views/PurchaseDocList.vue';
 import PurchaseSingleDoc from './views/PurchaseSingleDoc.vue';
 import SaleDocList from './views/SaleDocList.vue';
 import SaleSingleDoc from './views/SaleSingleDoc.vue';
+import MoneyOnList from './views/MoneyOnList.vue';
+import SingleMoneyOn from './views/SingleMoneyOn.vue';
+import MoneyOnCreate from './components/MoneyOnCreate.vue';
+
 //import router from './router'
 
 
@@ -119,6 +123,22 @@ const router = createRouter({
       path: "/sale/:id",
       name: "SaleSingleDoc",
       component: SaleSingleDoc,
+      props: true,
+    },
+    {
+      path: "/moneyon",
+      name: "MoneyOnList",
+      component: MoneyOnList,
+    },
+    {
+      path: "/moneyon/create",
+      name: "MoneyOnCreate",
+      component: MoneyOnCreate,
+    },
+    {
+      path: "/moneyon/:id",
+      name: "SingleMoneyOn",
+      component: SingleMoneyOn,
       props: true,
     },
   ],

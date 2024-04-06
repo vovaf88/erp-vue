@@ -1,6 +1,7 @@
 <template>
     <div>
         <h3>Products</h3>
+        <p><router-link to="/products/create">Создать номенклатуру</router-link></p>
         <label
             v-for="category in listCategory"
             :key="category.id"
